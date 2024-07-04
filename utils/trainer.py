@@ -39,6 +39,8 @@ def evalu(residual_model: nn.Module,
         predict_labels = diffusion_models.p_sample_loop(test_inputs, residual_model)
         print(f'current batch predict shape:{predict_labels.shape}')
         # compute the mre loss between predict value and the ground truth
+        predict_labels = normalizer_y.decode(predict_labels)
+        test_inputs = normalizer_x.decode(test_inputs)
         test_mre += calculate_mre(predict_labels * mark_v, test_labels * mark_v)
         original_mre += calculate_mre(test_inputs * mark_v, test_labels * mark_v)
     print('------------------------------------------')
