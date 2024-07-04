@@ -6,7 +6,7 @@
 
 2. data can be download:
 
-![network](https://github.com/pidneuralode/DiResNO/blob/main/figure/network.jpg)
+![network](https://github.com/pidneuralode/DiResNO/blob/main/figure/car%20dataset.png)
    https://drive.google.com/file/d/1HMCgCnuAMVqkReg6meUa9HFogSSi6VKO/view?usp=drive_link
 
 3. environment prepare:
